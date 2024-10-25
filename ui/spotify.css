@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --kiri-bg: rgb(27, 25, 25);
+  --kanan-bg: rgb(78, 74, 74);
+  --tulisan-nohover: rgb(167, 164, 164);
+  --ukuran-kiri: 440%;
+  --abusigma: rgb(57, 57, 57);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  gap: 3vh;
+  margin: 15px;
+}
+
+.kiri {
+  border-radius: 10px;
+  padding: 0vh 15em 1em 2vh;
+  width: 20em;
+  height: 35.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: fixed;
+  z-index: 999;
+}
+
+.kanan {
+  background-color: var(--kanan-bg);
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 11em 1em 0;
+  margin-left: 20em;
+  height: 100em;
+}
+
+.pertama {
+  background-color: var(--kiri-bg);
+  width: var(--ukuran-kiri);
+  height: 28%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vh;
+  border-radius: 10px;
+}
+
+.pertama .logo {
+  display: flex;
+  font-weight: 500;
+  font-size: small;
+  align-items: center;
+  margin-left: -3px;
+  cursor: pointer;
+  width: 16.5vh;
+  margin-top: 8px;
+}
+
+/* .pertama .logo:not(img) {
+    margin-left: px;
+} */
+
+.pertama .logo img {
+  justify-content: center;
+  width: 2.5em;
+}
+
+.mesig .menu {
+  list-style: none;
+  padding-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  font-weight: 700;
+}
+
+.mesig .menu li > a {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  color: var(--tulisan-nohover);
+  align-items: center;
+  transition: ease-in-out 0.2s;
+}
+
+.mesig .menu li > a:hover {
+  color: white;
+}
+
+.kedua {
+  background-color: var(--kiri-bg);
+  width: var(--ukuran-kiri);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  padding: 10px;
+}
+
+.kedua .library {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kedua .library a {
+  text-decoration: none;
+  color: var(--tulisan-nohover);
+  display: flex;
+  align-items: center;
+  transition: ease-in-out 0.2s;
+}
+
+.kedua .library a:hover {
+  color: white;
+}
+
+.kedua .library .kirinya a {
+  gap: 15px;
+  font-weight: 700;
+}
+
+.kedua .create {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 100%;
+  height: 40%;
+  overflow: auto;
+  position: relative;
+  padding: 5px;
+}
+
+.kedua .create::-webkit-scrollbar {
+  display: none;
+}
+
+.kedua .create::-webkit-scrollbar:hover {
+  display: block;
+}
+
+.kedua .create .plist {
+  margin-top: 5px;
+}
+
+.kedua .create .podc {
+  margin-bottom: 20px;
+}
+
+.kedua .create .plist,
+.kedua .create .podc {
+  background-color: var(--abusigma);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.kedua .create .plist a,
+.kedua .create .podc a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: small;
+  background-color: white;
+  padding: 7px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.kedua .create .plist a:hover,
+.kedua .create .podc a:hover {
+  background-color: rgb(222, 219, 219);
+  padding: 9px;
+}
+
+.kopirek {
+  margin-top: 20px;
+}
+
+.kopirek ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-size: smaller;
+  gap: 30px;
+}
+
+.kopirek {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.kopirek ul a {
+  text-decoration: none;
+  color: var(--tulisan-nohover);
+}
+
+.kopirek ul > .kukis:hover {
+  text-decoration: underline;
+}
+
+.bahasa a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 42%;
+  gap: 10px;
+  padding: 8px;
+  border: 2px solid var(--tulisan-nohover);
+  border-radius: 30px;
+  color: white;
+  transition: ease-in-out 0.2s;
+  margin-top: 10px;
+}
+
+.bahasa a:hover {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+
+.segede {
+  background-image: url(img/petrik.jpeg);
+  height: 17%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 117.7%;
+  border-radius: 10px 10px 0 0;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.segede .atas {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  width: 78%;
+}
+
+.segede .atas .kanankiri ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 2vh;
+}
+
+.segede .atas .kanankiri ul a {
+  text-decoration: none;
+  color: var(--tulisan-nohover);
+  cursor: no-drop;
+}
+
+.segede .atas .signlog {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-right: 2%;
+}
+
+.segede .atas .signlog .signup a {
+  text-decoration: none;
+  color: var(--tulisan-nohover);
+  font-weight: 500;
+  transition: ease-in-out 0.2s;
+  padding-top: 25%;
+  display: flex;
+}
+
+.segede .atas .signlog .signup a:hover {
+  color: white;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.segede .atas .signlog .login a {
+  background-color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  display: flex;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s;
+  color: black;
+}
+
+.segede .atas .signlog .login a:hover {
+  font-weight: 800;
+  background-color: rgb(230, 230, 230);
+  padding: 16px 35px;
+}
+
+.segede .bawah {
+  padding: 12px;
+  margin-top: 8em;
+}
